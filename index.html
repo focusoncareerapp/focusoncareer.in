@@ -4,29 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Focus On Career - Official Website</title>
+<title>Focus On Career</title>
 
 <style>
 
-/* ===== BODY ===== */
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     background:#f4f6fb;
-    color:#222;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
-    background:#173f8a;
+    background:#1e3c88;
     color:white;
     text-align:center;
-    padding:25px 15px;
+    padding:15px;
 }
 
-/* ===== NAVBAR ===== */
+.logo{
+    width:70px;
+    display:block;
+    margin:auto;
+}
+
+/* MENU */
 nav{
-    background:#0f2e6e;
+    background:#15306b;
     text-align:center;
     padding:10px;
 }
@@ -34,66 +38,77 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 12px;
-    font-weight:600;
-    font-size:15px;
+    margin:8px;
+    font-size:14px;
+    font-weight:bold;
 }
 
-nav a:hover{
-    text-decoration:underline;
-}
-
-/* ===== HERO SECTION ===== */
+/* HERO SECTION */
 .hero{
-    background:#173f8a;
+    background:#1e3c88;
     color:white;
     text-align:center;
-    padding:40px 15px 50px;
+    padding:40px 20px;
+}
+
+.banner{
+    width:100%;
+    max-width:600px;
+    border-radius:10px;
+    margin-bottom:15px;
 }
 
 .hero h1{
-    font-size:38px;
-    margin-bottom:10px;
+    margin:10px 0;
 }
 
-.hero p{
-    font-size:18px;
-}
-
-/* DOWNLOAD BUTTON */
 .download-btn{
     background:#ff9800;
     color:white;
-    padding:15px 30px;
+    padding:14px 30px;
     border-radius:8px;
     text-decoration:none;
-    font-size:18px;
     font-weight:bold;
     display:inline-block;
-    margin-top:20px;
+    margin-top:15px;
 }
 
-.download-btn:hover{
-    background:#e68900;
-}
-
-/* ===== CONTENT BOX ===== */
+/* CONTENT */
 .container{
+    width:90%;
     max-width:900px;
     margin:auto;
-    padding:15px;
 }
 
 .card{
     background:white;
-    padding:20px;
-    border-radius:10px;
+    padding:18px;
     margin-top:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    border-radius:10px;
+    box-shadow:0px 3px 8px rgba(0,0,0,0.1);
 }
 
-.card h2{
-    color:#173f8a;
+.card h3{
+    margin-top:0;
+}
+
+/* GROUP BUTTON */
+.group-btn{
+    color:white;
+    padding:10px 15px;
+    border-radius:6px;
+    text-decoration:none;
+    margin:5px;
+    display:inline-block;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3c88;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
 }
 
 </style>
@@ -102,6 +117,7 @@ nav a:hover{
 <body>
 
 <header>
+    <img src="logo.png" class="logo">
     <h2>Focus On Career</h2>
 </header>
 
@@ -115,96 +131,77 @@ nav a:hover{
 </nav>
 
 <section class="hero">
+
+    <img src="banner.jpg" class="banner">
+
     <h1>Focus On Career</h1>
+
     <p>ગુજરાતની તમામ સરકારી પરીક્ષાની તૈયારી માટે વિશ્વસનીય એપ</p>
 
     <a href="Focus On Career.apk" class="download-btn">
         Download App
     </a>
 
-    <p style="margin-top:15px;">
-        Official App | Safe & Secure | Virus Free
-    </p>
+    <p>Official App | Safe & Secure | Virus Free</p>
+
 </section>
 
 <div class="container">
-  <!-- APP INFO -->
-    <div class="card">
-        <h2>📱 એપ વિશે</h2>
-        <p>
-        Focus On Career એપમાં ગુજરાતની વિવિધ સરકારી પરીક્ષાઓ માટે
-        MCQ, Mock Test, Ebook, Video Lecture અને Printed Book ની
-        સુવિધા ઉપલબ્ધ છે. વિદ્યાર્થીઓને સરળ ભાષામાં અને પરીક્ષા આધારિત
-        અભ્યાસ સામગ્રી આપવામાં આવે છે.
-        </p>
-    </div>
 
-    <!-- COURSE INFO -->
-    <div class="card">
-        <h2>📘 ખાસ Electrical Assistant Course</h2>
-        <p>
-        GETCO અને UGVCL Electrical Assistant પરીક્ષા માટે ખાસ તૈયાર કરાયેલ
-        MCQ, Mock Test અને 3900+ MCQ ની Printed Book ઉપલબ્ધ છે.
-        ITI Electrician અને Wireman syllabus મુજબ સંપૂર્ણ તૈયારી.
-        </p>
-    </div>
+<div class="card">
+<h3>📱 એપ વિષે</h3>
+<p>
+Focus On Career એપમાં ગુજરાતની વિવિધ સરકારી પરીક્ષાઓ માટે MCQ,
+Mock Test, Ebook, Video Lecture અને Printed Book ની સુવિધા ઉપલબ્ધ છે.
+વિદ્યાર્થીઓને સરળ ભાષામાં પરીક્ષા આધારિત અભ્યાસ સામગ્રી આપવામાં આવે છે.
+</p>
+</div>
 
-    <!-- FEATURES -->
-    <div class="card">
-        <h2>📚 એપમાં ઉપલબ્ધ સુવિધાઓ</h2>
-        <ul>
-            <li>✔ Subject Wise Mock Test</li>
-            <li>✔ Ebook Course</li>
-            <li>✔ Video Lecture (જલ્દી ઉપલબ્ધ)</li>
-            <li>✔ Printed Book Order</li>
-            <li>✔ Exam Oriented Preparation</li>
-        </ul>
-    </div>
+<div class="card">
+<h3>📘 ખાસ Electrical Assistant Course</h3>
+<p>
+GETCO અને UGVCL Electrical Assistant પરીક્ષા માટે ખાસ તૈયાર કરાયેલ MCQ,
+Mock Test અને 3900+ MCQ ની Printed Book ઉપલબ્ધ છે.
+ITI Electrician અને Wireman syllabus મુજબ સંપૂર્ણ તૈયારી.
+</p>
+</div>
 
-    <!-- OFFICIAL GROUPS -->
-    <div class="card">
-        <h2>📢 Official Groups</h2>
+<div class="card">
+<h3>📚 એપમાં ઉપલબ્ધ સુવિધાઓ</h3>
+<ul>
+<li>✔ Subject Wise Mock Test</li>
+<li>✔ Ebook Course</li>
+<li>✔ Video Lecture</li>
+<li>✔ Printed Book Order</li>
+<li>✔ Exam Oriented Preparation</li>
+</ul>
+</div>
 
-        <a href="https://chat.whatsapp.com/Ec81UodEYPOLRkzqS33dx3?mode=gi_t"
-           target="_blank"
-           class="download-btn"
-           style="background:#25D366;margin:5px;">
-           WhatsApp Group
-        </a>
+<div class="card">
+<h3>📢 Official Groups</h3>
 
-        <a href="https://t.me/focusoncareer_gujarat"
-           target="_blank"
-           class="download-btn"
-           style="background:#229ED9;margin:5px;">
-           Telegram Group
-        </a>
+<a href="https://chat.whatsapp.com/Ec81UodEYPOLRkzqS33dx3?mode=gi_t"
+target="_blank"
+class="group-btn"
+style="background:#25D366;">WhatsApp Group</a>
 
-        <a href="https://www.instagram.com/study_gujarat_exam"
-           target="_blank"
-           class="download-btn"
-           style="background:#E1306C;margin:5px;">
-           Instagram
-        </a>
-    </div>
-    <!-- FOOTER -->
-    <div class="footer">
-        <h3>Focus On Career</h3>
+<a href="https://t.me/focusoncareer_gujarat"
+target="_blank"
+class="group-btn"
+style="background:#229ED9;">Telegram Group</a>
 
-        <p>
-        ગુજરાતની સરકારી પરીક્ષાઓ માટે વિશ્વસનીય અભ્યાસ પ્લેટફોર્મ.
-        Electrical Assistant માટે ખાસ MCQ Book, Mock Test, Ebook અને
-        Study Material ઉપલબ્ધ.
-        </p>
+<a href="https://www.instagram.com/study_gujarat_exam"
+target="_blank"
+class="group-btn"
+style="background:#E1306C;">Instagram</a>
 
-        <p>
-        આ વેબસાઇટ અને એપમાં આપવામાં આવેલી તમામ અભ્યાસ સામગ્રી
-        ટીમ દ્વારા સ્વયં તૈયાર કરવામાં આવેલ છે.
-        </p>
+</div>
 
-        <p style="margin-top:15px;">
-        © 2026 Focus On Career. All Rights Reserved.
-        </p>
-    </div>
+</div>
+
+<footer>
+© 2026 Focus On Career | All Rights Reserved
+</footer>
 
 </body>
 </html>
