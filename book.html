@@ -9,134 +9,126 @@
 
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f2f4f8;
+    font-family:Arial, sans-serif;
+    background:#f4f6fb;
 }
 
-/* HEADER */
-header{
-    background:#1f3c88;
+/* ===== Banner ===== */
+
+.banner{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
     color:white;
     text-align:center;
+    padding:60px 20px;
+}
+
+.banner h1{
+    font-size:36px;
+    margin:0;
+}
+
+.banner p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* ===== Container ===== */
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+    margin-top:30px;
+}
+
+/* ===== Book Cards ===== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
     padding:15px;
 }
 
-header img{
-    width:60px;
+.card h3{
+    margin:0;
+    font-size:18px;
 }
 
-nav{
-    background:#162f6b;
-    text-align:center;
-    padding:10px;
+.price{
+    color:#2563eb;
+    font-weight:bold;
+    margin:10px 0;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:10px;
-    font-size:15px;
-}
-
-/* BANNER */
-.banner{
-    max-width:1000px;
-    margin:20px auto;
-}
-
-.banner img{
+.btn{
     width:100%;
-    border-radius:12px;
-}
-
-/* STORE TITLE */
-.store-title{
-    text-align:center;
-    font-size:28px;
-    color:#1f3c88;
-    font-weight:bold;
-    margin-top:10px;
-}
-
-/* BOOK CARD */
-.book-card{
-    background:white;
-    max-width:900px;
-    margin:25px auto;
-    border-radius:12px;
-    padding:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-
-.book-title{
-    font-size:22px;
-    color:#1f3c88;
-    font-weight:bold;
-}
-
-.book-desc{
-    margin-top:10px;
-    line-height:1.6;
-}
-
-.demo-btn{
-    display:inline-block;
-    margin-top:15px;
-    background:#28a745;
-    color:white;
-    padding:10px 18px;
+    padding:10px;
+    border:none;
     border-radius:6px;
-    text-decoration:none;
+    margin-top:6px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-/* FORM */
-.form-box{
+.add-cart{
+    background:#2563eb;
+    color:white;
+}
+
+.demo{
+    background:#f59e0b;
+    color:white;
+}
+
+.coming{
+    background:#9ca3af;
+    color:white;
+}
+
+/* ===== Cart ===== */
+
+.cart-box{
+    margin-top:40px;
     background:white;
-    max-width:900px;
-    margin:25px auto;
     padding:20px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-}
-
-.form-box h2{
-    color:#1f3c88;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 input{
     width:100%;
     padding:10px;
-    margin-top:10px;
-    margin-bottom:15px;
-    border-radius:6px;
+    margin-top:8px;
     border:1px solid #ccc;
-}
-
-.buy-btn{
-    background:#ff9800;
-    color:white;
-    padding:12px;
-    border:none;
-    width:100%;
-    font-size:18px;
     border-radius:6px;
-    cursor:pointer;
 }
 
-/* PAYMENT NOTE */
-.payment-note{
-    text-align:center;
-    color:#777;
-    margin-top:10px;
-}
-
-/* FOOTER */
-footer{
-    background:#1f3c88;
+.order-btn{
+    background:#16a34a;
     color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
+    margin-top:15px;
 }
 
 </style>
@@ -144,65 +136,128 @@ footer{
 
 <body>
 
-<header>
-    <img src="logo.png">
-    <h2>Focus On Career</h2>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="course.html">Course Info</a>
-    <a href="book.html">Book Order</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="delete-account.html">Account Delete</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<!-- ===== Banner ===== -->
 
 <div class="banner">
-    <img src="banner.jpg">
+    <h1>Focus On Career Book Store</h1>
+    <p>Electrical Assistant All in One MCQ Book</p>
+    <p>Printed Book Courier દ્વારા ઘરે મેળવો</p>
 </div>
 
-<div class="store-title">
-    Focus On Career Book Store
+<div class="container">
+
+<!-- ===== BOOK GRID ===== -->
+
+<div class="grid">
+
+<!-- BOOK 1 ACTIVE -->
+
+<div class="card">
+<img src="book1.jpg">
+
+<div class="card-content">
+<h3>Electrical Assistant All in One MCQ Book</h3>
+<p class="price">₹ 279</p>
+
+<a href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk" target="_blank">
+<button class="btn demo">Demo PDF View</button>
+</a>
+
+<button class="btn add-cart" onclick="addToCart('Electrical Assistant Book')">
+Add to Cart
+</button>
+
+</div>
 </div>
 
-<div class="book-card">
-    <div class="book-title">
-        All In One MCQ Book (Electrical & Competitive Exam)
-    </div>
+<!-- BOOK 2 COMING SOON -->
 
-    <div class="book-desc">
-        આ પુસ્તક ગુજરાતની વિવિધ સરકારી પરીક્ષાઓ માટે ખાસ તૈયાર કરવામાં આવ્યું છે.
-        તેમાં Exam Oriented MCQ, Mock Test Pattern Questions, અને મહત્વપૂર્ણ Theory સમાવેશ થાય છે.
-        આ Book Website ના Book Order Section અને App ના Offers Section માંથી પણ ઓર્ડર કરી શકાય છે.
-    </div>
-
-    <a href="demo-book.pdf" class="demo-btn" target="_blank">
-        Demo PDF Download
-    </a>
+<div class="card">
+<img src="book2.jpg">
+<div class="card-content">
+<h3>New Book Coming Soon</h3>
+<p class="price">Coming Soon</p>
+<button class="btn coming">Payment Coming Soon</button>
+</div>
 </div>
 
-<div class="form-box">
-    <h2>Book Delivery Address</h2>
+<!-- BOOK 3 -->
 
-    <input type="text" placeholder="Student Name">
-    <input type="text" placeholder="Village">
-    <input type="text" placeholder="Post Office">
-    <input type="text" placeholder="Taluka">
-    <input type="text" placeholder="District">
-    <input type="text" placeholder="Pincode">
-    <input type="text" placeholder="Mobile Number">
-
-    <button class="buy-btn">BUY NOW</button>
-
-    <div class="payment-note">
-        Payment System Coming Soon (Razorpay Secure Payment)
-    </div>
+<div class="card">
+<img src="book3.jpg">
+<div class="card-content">
+<h3>New Book Coming Soon</h3>
+<p class="price">Coming Soon</p>
+<button class="btn coming">Payment Coming Soon</button>
+</div>
 </div>
 
-<footer>
-© 2026 Focus On Career | All Rights Reserved
-</footer>
+<!-- BOOK 4 -->
+
+<div class="card">
+<img src="book4.jpg">
+<div class="card-content">
+<h3>New Book Coming Soon</h3>
+<p class="price">Coming Soon</p>
+<button class="btn coming">Payment Coming Soon</button>
+</div>
+</div>
+
+</div>
+
+<!-- ===== CART SECTION ===== -->
+
+<div class="cart-box">
+<h2>Cart & Order Details</h2>
+
+<p id="cartItems">No Book Added</p>
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="village" placeholder="Village">
+<input type="text" id="taluka" placeholder="Taluka">
+<input type="text" id="district" placeholder="District">
+<input type="text" id="pincode" placeholder="Pincode">
+<input type="text" id="mobile" placeholder="Mobile Number">
+
+<button class="btn order-btn" onclick="sendOrder()">Order via WhatsApp</button>
+
+</div>
+
+</div>
+
+<script>
+
+let cart=[];
+
+function addToCart(book){
+    cart.push(book);
+    document.getElementById("cartItems").innerHTML =
+    "Added Books : " + cart.join(", ");
+}
+
+function sendOrder(){
+
+let name=document.getElementById("name").value;
+let village=document.getElementById("village").value;
+let taluka=document.getElementById("taluka").value;
+let district=document.getElementById("district").value;
+let pincode=document.getElementById("pincode").value;
+let mobile=document.getElementById("mobile").value;
+
+let message =
+"Book Order%0A%0A"+
+"Book: "+cart.join(", ")+"%0A"+
+"Name: "+name+"%0A"+
+"Village: "+village+"%0A"+
+"Taluka: "+taluka+"%0A"+
+"District: "+district+"%0A"+
+"Pincode: "+pincode+"%0A"+
+"Mobile: "+mobile;
+
+window.open("https://wa.me/916355109710?text="+message);
+}
+
+</script>
 
 </body>
 </html>
