@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Focus On Career App | Official Download</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,130 +17,163 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f1f5f9;
+background:#f4f6fb;
 color:#222;
 }
 
-/* HEADER */
-.header{
-background:#0d2b5c;
-padding:15px 30px;
+/* NAVIGATION */
+nav{
+background:#0d2c5a;
+padding:14px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-color:white;
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+color:white;
+font-weight:600;
+font-size:18px;
 }
 
 .logo img{
 height:40px;
+margin-right:10px;
 }
 
-.logo h1{
-font-size:18px;
-}
-
-.nav a{
+.nav-links a{
 color:white;
 text-decoration:none;
-margin-left:15px;
+margin-left:25px;
 font-size:14px;
+transition:0.3s;
 }
 
-.nav a:hover{
+.nav-links a:hover{
 color:#ffc107;
 }
 
-/* APP SECTION */
-
-.app-container{
-max-width:1000px;
-margin:40px auto;
+/* APP HEADER */
+.app-header{
 background:white;
+max-width:1100px;
+margin:40px auto;
 padding:30px;
 border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* TOP SECTION */
-
-.app-top{
+box-shadow:0 5px 25px rgba(0,0,0,0.08);
 display:flex;
-gap:25px;
 flex-wrap:wrap;
+align-items:center;
+gap:30px;
+animation:fadeIn 1s ease-in-out;
 }
 
-.app-top img{
-width:120px;
-border-radius:20px;
+.app-icon{
+width:130px;
+border-radius:25px;
 }
 
-.app-info h2{
-font-size:24px;
-margin-bottom:5px;
+.app-info h1{
+font-size:26px;
+margin-bottom:6px;
 }
 
 .rating{
-color:#fbbf24;
-font-size:18px;
-margin:8px 0;
+color:#ffc107;
+font-weight:600;
+margin:6px 0;
 }
 
 .download-btn{
-display:inline-block;
-margin-top:15px;
-background:#16a34a;
+background:#28a745;
 color:white;
 padding:12px 25px;
+border:none;
 border-radius:8px;
-text-decoration:none;
-font-weight:600;
+font-size:15px;
+cursor:pointer;
+margin-top:12px;
+transition:0.3s;
 }
 
 .download-btn:hover{
-background:#15803d;
+background:#1e7e34;
 }
 
-/* SCREENSHOT */
-
-.screenshots{
-margin-top:40px;
+/* SCREENSHOTS */
+.section{
+max-width:1100px;
+margin:30px auto;
+padding:0 20px;
 }
 
-.screenshot-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
+.section h2{
+margin-bottom:20px;
+font-size:22px;
 }
 
-.screenshot-grid img{
-width:100%;
+.screenshot-slider{
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+}
+
+.screenshot-slider img{
+height:420px;
 border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-/* DESCRIPTION */
+.screenshot-slider img:hover{
+transform:scale(1.05);
+}
 
-.description{
-margin-top:40px;
+/* ABOUT */
+.about-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.07);
 line-height:1.7;
 }
 
-/* FOOTER */
+.features{
+margin-top:15px;
+}
 
-.footer{
-text-align:center;
-margin-top:50px;
-padding:20px;
-background:#0d2b5c;
+.features li{
+margin-bottom:8px;
+}
+
+/* FOOTER */
+footer{
+background:#0d2c5a;
 color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
 font-size:14px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.app-header{
+flex-direction:column;
+text-align:center;
+}
+.screenshot-slider img{
+height:320px;
+}
 }
 
 </style>
@@ -148,89 +181,107 @@ font-size:14px;
 
 <body>
 
-<div class="header">
-
+<!-- NAVIGATION -->
+<nav>
 <div class="logo">
 <img src="logo.png">
-<h1>Focus On Career</h1>
+Focus On Career
 </div>
 
-<div class="nav">
+<div class="nav-links">
 <a href="index.html">Home</a>
 <a href="course.html">Courses</a>
 <a href="book.html">Book Store</a>
 <a href="privacy.html">Policy</a>
 <a href="contact.html">Contact</a>
 </div>
+</nav>
 
-</div>
 
-<div class="app-container">
+<!-- APP HEADER -->
+<div class="app-header">
 
-<div class="app-top">
-
-<img src="logo.png">
+<img src="logo.png" class="app-icon">
 
 <div class="app-info">
-<h2>Focus On Career</h2>
+<h1>Focus On Career</h1>
 <p>Electrical & Competitive Exam Preparation App</p>
 
 <div class="rating">
-★★★★★ 4.8 (2,500+ Reviews)
+★★★★★ 4.8 (2,500+ Reviews) • 10K+ Downloads • Rated 3.9+
 </div>
 
-<p>10K+ Downloads • Education • Rated for 3+</p>
-
-<a href="Focus On Career.apk" class="download-btn">
-Download Official App
+<a href="Focus On Career.apk" download>
+<button class="download-btn">Download Official App</button>
 </a>
 
 </div>
 </div>
 
-<div class="screenshots">
-<h3>App Screenshots</h3>
 
-<div class="screenshot-grid">
-<img src="s1.jpg">
-<img src="s2.jpg">
-<img src="s3.jpg">
-<img src="s4.jpg">
+<!-- SCREENSHOTS -->
+<div class="section">
+<h2>App Screenshots</h2>
+
+<div class="screenshot-slider">
+<img src="app1.jpg">
+<img src="app2.jpg">
+<img src="app3.jpg">
+<img src="app4.jpg">
+</div>
 </div>
 
-</div>
 
-<div class="description">
-<h3>About This App</h3>
+<!-- ABOUT -->
+<div class="section">
+<div class="about-box">
+
+<h2>About This App</h2>
+
 <p>
-Focus On Career provides structured mock tests, ebooks, video lectures and printed book support for Gujarat competitive exams including Electrical Assistant and ITI based examinations.
+Focus On Career is a structured learning platform specially designed for Electrical Assistant and all Gujarat electrical competitive examinations. 
+The app provides syllabus-based preparation, mock tests, ebooks, video lectures and printed book ordering facility.
 </p>
 
 <br>
 
-<p>
-Features:
-✔ Subject Wise Mock Tests  
-✔ Ebook Study Material  
-✔ Video Lectures  
-✔ Printed Book Ordering  
-✔ Secure Payment System  
-✔ Fast Support Service  
-</p>
+<h3>Key Features</h3>
+<ul class="features">
+<li>✔ Electrical Assistant (GETCO, UGVCL, PGVCL, DGVCL, MGVCL)</li>
+<li>✔ ITI Electrician & Wireman Exam Preparation</li>
+<li>✔ Subject Wise Mock Tests</li>
+<li>✔ 3900+ MCQ Practice Questions</li>
+<li>✔ Video Lecture Facility</li>
+<li>✔ Ebook Study Material</li>
+<li>✔ Printed Book Order System</li>
+<li>✔ Fast WhatsApp & Email Support</li>
+<li>✔ Secure Payment Gateway</li>
+</ul>
 
 <br>
 
+<h3>ગુજરાતી માહિતી</h3>
+
 <p>
-ગુજરાત સરકારની વિવિધ સ્પર્ધાત્મક પરીક્ષાઓ માટે મૉક ટેસ્ટ, ઇબુક અને વિડિઓ લેક્ટર સુવિધા.
+Focus On Career એપ ખાસ કરીને ગુજરાતની તમામ Electrical Assistant પરીક્ષાઓ માટે તૈયાર કરવામાં આવી છે. 
+GETCO, UGVCL, PGVCL, DGVCL, MGVCL જેવી પરીક્ષાઓ માટે સંપૂર્ણ syllabus આધારિત તૈયારી સુવિધા ઉપલબ્ધ છે.
+</p>
+
+<p>
+વિદ્યાર્થીઓ માટે Subject Wise Mock Test, 3900+ MCQ પ્રેક્ટિસ પ્રશ્નો, Video Lecture, Ebook અને Printed Book Order સુવિધા આપવામાં આવે છે.
+</p>
+
+<p>
+Electrical Assistant અને ITI Electrician/Wireman માટે ખાસ માર્ગદર્શન સાથે સંપૂર્ણ તૈયારી પ્લેટફોર્મ.
 </p>
 
 </div>
-
 </div>
 
-<div class="footer">
+
+<footer>
 © 2026 Focus On Career | support@focusoncareer.in
-</div>
+</footer>
 
 </body>
 </html>
