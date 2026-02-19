@@ -8,20 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f4f6fb;color:#222;}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f4f6fb;
-color:#222;
-}
-
-/* NAVIGATION */
+/* NAV */
 nav{
 background:#0d2c5a;
 padding:14px 40px;
@@ -29,7 +19,6 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 }
-
 .logo{
 display:flex;
 align-items:center;
@@ -37,12 +26,7 @@ color:white;
 font-weight:600;
 font-size:18px;
 }
-
-.logo img{
-height:40px;
-margin-right:10px;
-}
-
+.logo img{height:40px;margin-right:10px;}
 .nav-links a{
 color:white;
 text-decoration:none;
@@ -50,12 +34,9 @@ margin-left:25px;
 font-size:14px;
 transition:0.3s;
 }
+.nav-links a:hover{color:#ffc107;}
 
-.nav-links a:hover{
-color:#ffc107;
-}
-
-/* APP HEADER */
+/* HEADER */
 .app-header{
 background:white;
 max-width:1100px;
@@ -67,25 +48,10 @@ display:flex;
 flex-wrap:wrap;
 align-items:center;
 gap:30px;
-animation:fadeIn 1s ease-in-out;
 }
-
-.app-icon{
-width:130px;
-border-radius:25px;
-}
-
-.app-info h1{
-font-size:26px;
-margin-bottom:6px;
-}
-
-.rating{
-color:#ffc107;
-font-weight:600;
-margin:6px 0;
-}
-
+.app-icon{width:130px;border-radius:25px;}
+.app-info h1{font-size:26px;margin-bottom:6px;}
+.rating{color:#ffc107;font-weight:600;margin:6px 0;}
 .download-btn{
 background:#28a745;
 color:white;
@@ -97,10 +63,7 @@ cursor:pointer;
 margin-top:12px;
 transition:0.3s;
 }
-
-.download-btn:hover{
-background:#1e7e34;
-}
+.download-btn:hover{background:#1e7e34;}
 
 /* SCREENSHOTS */
 .section{
@@ -108,28 +71,16 @@ max-width:1100px;
 margin:30px auto;
 padding:0 20px;
 }
-
-.section h2{
-margin-bottom:20px;
-font-size:22px;
-}
-
+.section h2{margin-bottom:20px;font-size:22px;}
 .screenshot-slider{
 display:flex;
 gap:20px;
 overflow-x:auto;
-scroll-behavior:smooth;
 }
-
 .screenshot-slider img{
 height:420px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.screenshot-slider img:hover{
-transform:scale(1.05);
 }
 
 /* ABOUT */
@@ -140,14 +91,7 @@ border-radius:15px;
 box-shadow:0 5px 20px rgba(0,0,0,0.07);
 line-height:1.7;
 }
-
-.features{
-margin-top:15px;
-}
-
-.features li{
-margin-bottom:8px;
-}
+.features li{margin-bottom:8px;}
 
 /* FOOTER */
 footer{
@@ -159,29 +103,15 @@ margin-top:50px;
 font-size:14px;
 }
 
-/* ANIMATION */
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(20px);}
-to{opacity:1; transform:translateY(0);}
-}
-
-/* MOBILE */
 @media(max-width:768px){
-.app-header{
-flex-direction:column;
-text-align:center;
+.app-header{flex-direction:column;text-align:center;}
+.screenshot-slider img{height:320px;}
 }
-.screenshot-slider img{
-height:320px;
-}
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
 <nav>
 <div class="logo">
 <img src="logo.png">
@@ -198,17 +128,15 @@ Focus On Career
 </nav>
 
 
-<!-- APP HEADER -->
 <div class="app-header">
-
 <img src="logo.png" class="app-icon">
 
 <div class="app-info">
 <h1>Focus On Career</h1>
-<p>Electrical & Competitive Exam Preparation App</p>
+<p>Electrical & Gujarat Competitive Exam Preparation App</p>
 
 <div class="rating">
-★★★★★ 4.8 (2,500+ Reviews) • 10K+ Downloads • Rated 3.9+
+★★★★★ 4.8 (2,500+ Reviews) • 10K+ Downloads • Rated 3+
 </div>
 
 <a href="Focus On Career.apk" download>
@@ -219,10 +147,8 @@ Focus On Career
 </div>
 
 
-<!-- SCREENSHOTS -->
 <div class="section">
 <h2>App Screenshots</h2>
-
 <div class="screenshot-slider">
 <img src="app1.jpg">
 <img src="app2.jpg">
@@ -232,23 +158,36 @@ Focus On Career
 </div>
 
 
-<!-- ABOUT -->
 <div class="section">
 <div class="about-box">
 
 <h2>About This App</h2>
 
 <p>
-Focus On Career is a structured learning platform specially designed for Electrical Assistant and all Gujarat electrical competitive examinations. 
+Focus On Career is a structured learning platform designed for Electrical Assistant and all major Gujarat competitive examinations. 
 The app provides syllabus-based preparation, mock tests, ebooks, video lectures and printed book ordering facility.
 </p>
 
 <br>
 
-<h3>Key Features</h3>
+<h3>Major Exams Covered</h3>
 <ul class="features">
 <li>✔ Electrical Assistant (GETCO, UGVCL, PGVCL, DGVCL, MGVCL)</li>
-<li>✔ ITI Electrician & Wireman Exam Preparation</li>
+<li>✔ ITI Electrician & Wireman</li>
+<li>✔ Gujarat Police Constable</li>
+<li>✔ Gujarat Police PSI</li>
+<li>✔ Talati Cum Mantri</li>
+<li>✔ MPHW / FHW</li>
+<li>✔ Junior Clerk</li>
+<li>✔ Forest Guard</li>
+<li>✔ Gram Sevak</li>
+<li>✔ Other Gujarat Government Exams</li>
+</ul>
+
+<br>
+
+<h3>Key Features</h3>
+<ul class="features">
 <li>✔ Subject Wise Mock Tests</li>
 <li>✔ 3900+ MCQ Practice Questions</li>
 <li>✔ Video Lecture Facility</li>
@@ -263,16 +202,15 @@ The app provides syllabus-based preparation, mock tests, ebooks, video lectures 
 <h3>ગુજરાતી માહિતી</h3>
 
 <p>
-Focus On Career એપ ખાસ કરીને ગુજરાતની તમામ Electrical Assistant પરીક્ષાઓ માટે તૈયાર કરવામાં આવી છે. 
-GETCO, UGVCL, PGVCL, DGVCL, MGVCL જેવી પરીક્ષાઓ માટે સંપૂર્ણ syllabus આધારિત તૈયારી સુવિધા ઉપલબ્ધ છે.
+Focus On Career એપ ખાસ કરીને ગુજરાતની તમામ સ્પર્ધાત્મક પરીક્ષાઓ માટે તૈયાર કરવામાં આવી છે. ખાસ કરીને Electrical Assistant (GETCO, UGVCL, PGVCL, DGVCL, MGVCL) માટે સંપૂર્ણ syllabus આધારિત તૈયારી ઉપલબ્ધ છે.
 </p>
 
 <p>
-વિદ્યાર્થીઓ માટે Subject Wise Mock Test, 3900+ MCQ પ્રેક્ટિસ પ્રશ્નો, Video Lecture, Ebook અને Printed Book Order સુવિધા આપવામાં આવે છે.
+સાથે સાથે Gujarat Police Constable, PSI, Talati, MPHW/FHW, Junior Clerk, Forest Guard, Gram Sevak અને અન્ય તમામ સરકારી પરીક્ષાઓ માટે પણ માર્ગદર્શન આપવામાં આવે છે.
 </p>
 
 <p>
-Electrical Assistant અને ITI Electrician/Wireman માટે ખાસ માર્ગદર્શન સાથે સંપૂર્ણ તૈયારી પ્લેટફોર્મ.
+વિદ્યાર્થીઓ માટે Subject Wise Mock Test, 3900+ MCQ પ્રેક્ટિસ, Video Lecture, Ebook અને Printed Book Order સુવિધા ઉપલબ્ધ છે.
 </p>
 
 </div>
