@@ -3,186 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Focus On Career | Official Education Platform</title>
+<title>Focus On Career | Electrical & Competitive Exam Preparation</title>
 
 <style>
 
+/* ===== GLOBAL ===== */
 body{
 margin:0;
-font-family: 'Segoe UI', Tahoma, sans-serif;
-background:#f4f6f9;
-color:#222;
+font-family:'Segoe UI', Tahoma, sans-serif;
+background:#f4f7fb;
+color:#1b2b4b;
 }
 
-/* ===== TOP HEADER ===== */
-.topbar{
+a{
+text-decoration:none;
+}
+
+/* ===== HEADER ===== */
+.header{
 background:#0b2c5f;
 color:white;
-padding:10px 20px;
+padding:12px 40px;
 display:flex;
 align-items:center;
 justify-content:space-between;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.brand{
+.logo-area{
 display:flex;
 align-items:center;
 font-size:22px;
 font-weight:600;
 }
 
-.brand img{
-height:40px;
-margin-right:10px;
+.logo-area img{
+height:42px;
+margin-right:12px;
 }
 
 .nav{
 display:flex;
-gap:20px;
+gap:28px;
 }
 
 .nav a{
 color:white;
-text-decoration:none;
 font-size:14px;
 }
 
 .nav a:hover{
-text-decoration:underline;
+color:#ffcc00;
 }
 
 /* ===== HERO SECTION ===== */
 .hero{
-background:linear-gradient(135deg,#0b2c5f,#1d4e89);
+background:linear-gradient(135deg,#0b2c5f,#1e4f94);
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:60px 20px 40px;
 }
 
 .hero h1{
 font-size:34px;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:18px;
+font-size:16px;
 margin-bottom:25px;
+opacity:0.9;
 }
 
-.btn-primary{
+/* Banner */
+.banner{
+max-width:1100px;
+margin:30px auto 0;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 30px rgba(0,0,0,0.25);
+}
+
+.banner img{
+width:100%;
+display:block;
+}
+
+/* Download Button */
+.download-btn{
+display:inline-block;
 background:#ff9800;
 color:white;
-padding:12px 25px;
-text-decoration:none;
-border-radius:4px;
-font-weight:bold;
-}
-
-.btn-primary:hover{
-background:#e68900;
-}
-
-/* ===== MAIN CONTAINER ===== */
-.container{
-max-width:1200px;
-margin:auto;
-padding:40px 20px;
-}
-
-/* ===== GRID CARDS ===== */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-transition:0.3s;
-text-align:center;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-margin-bottom:10px;
-color:#0b2c5f;
-}
-
-.card p{
-font-size:14px;
-color:#555;
-margin-bottom:15px;
-}
-
-.card a{
-display:inline-block;
-background:#0b2c5f;
-color:white;
-padding:8px 18px;
-text-decoration:none;
-border-radius:4px;
-font-size:14px;
-}
-
-.card a:hover{
-background:#1d4e89;
-}
-
-/* ===== ABOUT SECTION ===== */
-.about{
-background:white;
-padding:40px;
-margin-top:50px;
-border-radius:8px;
-box-shadow:0 4px 12px rgba(0,0,0,0.05);
-}
-
-.about h2{
-color:#0b2c5f;
-margin-bottom:15px;
-}
-
-/* ===== FOOTER ===== */
-.footer{
-background:#0b2c5f;
-color:white;
-text-align:center;
-padding:25px 15px;
-margin-top:60px;
-font-size:14px;
-}
-
-.footer a{
-color:#ffcc00;
-text-decoration:none;
-}
-
-.footer a:hover{
-text-decoration:underline;
-}
-
-.privacy-note{
-background:#eef2f7;
-padding:20px;
-font-size:13px;
-color:#444;
-margin-top:40px;
+padding:14px 28px;
 border-radius:6px;
+font-size:15px;
+font-weight:600;
+}
+
+.download-btn:hover{
+background:#e68900;
 }
 
 </style>
 </head>
+
 <body>
 
 <!-- ===== HEADER ===== -->
-<div class="topbar">
-<div class="brand">
+<div class="header">
+<div class="logo-area">
 <img src="logo.png" alt="Focus On Career Logo">
 Focus On Career
 </div>
@@ -190,8 +121,7 @@ Focus On Career
 <div class="nav">
 <a href="index.html">Home</a>
 <a href="course.html">Courses</a>
-<a href="book.html">Book Order</a>
-<a href="payment.html">Payment</a>
+<a href="book.html">Printed Books</a>
 <a href="privacy.html">Privacy Policy</a>
 <a href="contact.html">Contact</a>
 </div>
@@ -201,83 +131,278 @@ Focus On Career
 <div class="hero">
 <h1>Electrical & Competitive Exam Preparation</h1>
 <p>Mock Test | Ebook | Video Lecture | Printed Books</p>
-<a href="#" class="btn-primary">Download App</a>
-</div>
 
-<!-- ===== MAIN SECTION ===== -->
-<div class="container">
+<a href="Focus On Career.apk" class="download-btn">
+Download Official App
+</a>
+
+<div class="banner">
+<img src="banner1.jpg" alt="Focus On Career Banner">
+</div>
+</div>
+<style>
+
+/* ===== MAIN SECTION ===== */
+.section{
+max-width:1200px;
+margin:60px auto;
+padding:0 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:28px;
+margin-bottom:40px;
+font-weight:600;
+color:#0b2c5f;
+}
+
+/* ===== CARD GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+padding:30px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0b2c5f;
+font-size:18px;
+}
+
+.card p{
+font-size:14px;
+line-height:1.6;
+color:#555;
+margin-bottom:20px;
+}
+
+.card-btn{
+display:inline-block;
+background:#0b2c5f;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+font-size:13px;
+}
+
+.card-btn:hover{
+background:#163e82;
+}
+
+.about-box{
+background:white;
+margin-top:70px;
+padding:40px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+line-height:1.7;
+}
+
+.about-box h2{
+color:#0b2c5f;
+margin-bottom:20px;
+}
+
+.about-box p{
+font-size:14px;
+margin-bottom:15px;
+}
+
+</style>
+
+
+<!-- ===== FEATURES SECTION ===== -->
+<div class="section">
+
+<h2 class="section-title">Our Educational Services</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Course Information</h3>
-<p>View syllabus based structured learning system for competitive exams.</p>
-<a href="course.html">Explore</a>
+<p>Syllabus-based structured learning system designed for electrical and competitive government examinations.</p>
+<a href="course.html" class="card-btn">Explore Courses</a>
 </div>
 
 <div class="card">
 <h3>Printed Book Order</h3>
-<p>Secure online ordering system for printed books (Prepaid Only).</p>
-<a href="book.html">Order Now</a>
-</div>
-
-<div class="card">
-<h3>Payment Information</h3>
-<p>Secure RBI-compliant payment gateway transactions.</p>
-<a href="payment.html">View</a>
+<p>Order printed preparation books securely through online payment system. Cash on Delivery is not available.</p>
+<a href="book.html" class="card-btn">Order Now</a>
 </div>
 
 <div class="card">
 <h3>Privacy & Legal Policy</h3>
-<p>Read official privacy, refund and shipping policies.</p>
-<a href="privacy.html">Read Policy</a>
+<p>Read our official Privacy Policy, Refund Policy, Shipping Policy and Terms & Conditions.</p>
+<a href="privacy.html" class="card-btn">Read Policy</a>
 </div>
 
 <div class="card">
 <h3>Account Deletion</h3>
-<p>Delete your account safely as per IT Act guidelines.</p>
-<a href="delete-account.html">Delete</a>
+<p>Users can request account deletion from App profile or through official support email.</p>
+<a href="delete-account.html" class="card-btn">Delete Account</a>
 </div>
 
 <div class="card">
 <h3>Contact Support</h3>
-<p>Email and WhatsApp support available for assistance.</p>
-<a href="contact.html">Contact</a>
+<p>Email and WhatsApp support available for queries related to courses and book orders.</p>
+<a href="contact.html" class="card-btn">Contact Us</a>
+</div>
+
+<div class="card">
+<h3>Official App Access</h3>
+<p>Access mock tests, ebooks and video lectures through our secure mobile application.</p>
+<a href="Focus On Career.apk" class="card-btn">Download App</a>
 </div>
 
 </div>
 
-<!-- ===== ABOUT ===== -->
-<div class="about">
+
+<!-- ===== ABOUT SECTION ===== -->
+<div class="about-box">
 <h2>About Focus On Career</h2>
+
 <p>
-Focus On Career is an independent educational platform based in Deesa, Gujarat, India.
-We provide structured preparation material for electrical and competitive examinations
-including mock tests, ebooks, video lectures and printed books.
+Focus On Career is an independent educational platform based in Deesa, Gujarat, India. 
+We provide exam-oriented preparation material for electrical and competitive government examinations.
 </p>
 
 <p>
-ગુજરાતની વિવિધ સ્પર્ધાત્મક પરીક્ષાઓ માટે સરળ, વિશ્વસનીય અને
-સિલેબસ આધારિત અભ્યાસ વ્યવસ્થા પ્રદાન કરવાનું અમારું ધ્યેય છે.
+Our platform includes Mock Tests, Ebooks, Video Lectures and Printed Books 
+designed according to official syllabus patterns.
 </p>
+
+<p>
+ગુજરાત રાજ્યની વિવિધ સરકારી પરીક્ષાઓ માટે વિષયવાર અને સિલેબસ આધારિત અભ્યાસ વ્યવસ્થા અહીં ઉપલબ્ધ છે.
+</p>
+
 </div>
 
-<!-- ===== PRIVACY NOTE ===== -->
-<div class="privacy-note">
+</div>
+<style>
+
+/* ===== LEGAL STRIP ===== */
+.legal-strip{
+background:#f0f2f5;
+padding:25px 20px;
+text-align:center;
+font-size:13px;
+color:#555;
+line-height:1.7;
+}
+
+.legal-strip a{
+color:#0b2c5f;
+font-weight:600;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+background:#0b2c5f;
+color:white;
+padding:40px 20px;
+margin-top:0;
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.footer h4{
+margin-bottom:15px;
+font-size:16px;
+}
+
+.footer p,
+.footer a{
+font-size:13px;
+color:#dcdcdc;
+margin-bottom:8px;
+display:block;
+}
+
+.footer a:hover{
+color:white;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+font-size:12px;
+color:#bbb;
+}
+
+.social-links a{
+display:inline-block;
+margin-right:15px;
+font-size:14px;
+}
+
+</style>
+
+
+<!-- ===== LEGAL STRIP ===== -->
+<div class="legal-strip">
 By using this website and mobile application, you agree to our 
 <a href="privacy.html">Privacy Policy</a>, 
-Payment Policy, Refund Policy and Terms of Service.  
-All payments are processed securely via authorized gateways.  
-Focus On Career is not affiliated with any government body.
+<a href="privacy.html">Refund Policy</a>, 
+<a href="privacy.html">Shipping Policy</a> and 
+Terms of Service.
+
+All payments are processed securely via authorized payment gateways.
+
+Focus On Career is an independent educational platform and is not affiliated with any government body.
 </div>
 
-</div>
 
 <!-- ===== FOOTER ===== -->
 <div class="footer">
-© 2026 Focus On Career | All Rights Reserved <br>
-Email: <a href="mailto:support@focusoncareer.in">support@focusoncareer.in</a>
+
+<div class="footer-container">
+
+<div>
+<h4>Focus On Career</h4>
+<p>Electrical & Competitive Exam Preparation Platform</p>
+<p>Deesa, Gujarat, India</p>
+<p>Email: support@focusoncareer.in</p>
 </div>
 
-</body>
-</html>
+<div>
+<h4>Quick Links</h4>
+<a href="index.html">Home</a>
+<a href="course.html">Courses</a>
+<a href="book.html">Book Order</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div>
+<h4>Support</h4>
+<a href="mailto:support@focusoncareer.in">Email Support</a>
+<a href="https://wa.me/916355109710" target="_blank">WhatsApp Support</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Focus On Career. All Rights Reserved.
+</div>
+
+</div>
