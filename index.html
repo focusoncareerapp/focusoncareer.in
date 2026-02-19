@@ -1,114 +1,157 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Focus On Career</title>
+<title>Focus On Career | Official Website</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6fb;
+background:#f4f6fb;
+color:#333;
 }
 
 /* HEADER */
 header{
-    background:#1e3c88;
-    color:white;
-    text-align:center;
-    padding:15px;
+background:#0d1b3e;
+color:white;
+padding:20px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
-.logo{
-    width:70px;
-    display:block;
-    margin:auto;
-}
-
-/* MENU */
-nav{
-    background:#15306b;
-    text-align:center;
-    padding:10px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:8px;
-    font-size:14px;
-    font-weight:bold;
+header h1{
+font-size:28px;
+letter-spacing:1px;
 }
 
 /* HERO SECTION */
 .hero{
-    background:#1e3c88;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+background:linear-gradient(135deg,#1d2b64,#f8cdda);
+padding:60px 20px;
+text-align:center;
+color:white;
 }
 
-.banner{
-    width:100%;
-    max-width:600px;
-    border-radius:10px;
-    margin-bottom:15px;
+.hero h2{
+font-size:32px;
+margin-bottom:15px;
 }
 
-.hero h1{
-    margin:10px 0;
+.hero p{
+font-size:18px;
+margin-bottom:25px;
 }
 
-.download-btn{
-    background:#ff9800;
-    color:white;
-    padding:14px 30px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-    display:inline-block;
-    margin-top:15px;
+.hero .download-btn{
+background:#ff9800;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
 }
 
-/* CONTENT */
-.container{
-    width:90%;
-    max-width:900px;
-    margin:auto;
+/* BUTTON CARD SECTION */
+.section{
+padding:50px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-    background:white;
-    padding:18px;
-    margin-top:20px;
-    border-radius:10px;
-    box-shadow:0px 3px 8px rgba(0,0,0,0.1);
+background:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
-    margin-top:0;
+margin-bottom:15px;
+color:#0d1b3e;
 }
 
-/* GROUP BUTTON */
-.group-btn{
-    color:white;
-    padding:10px 15px;
-    border-radius:6px;
-    text-decoration:none;
-    margin:5px;
-    display:inline-block;
+.card p{
+margin-bottom:20px;
+font-size:14px;
+color:#555;
+}
+
+.card a{
+display:inline-block;
+background:#0d1b3e;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+}
+
+/* ABOUT SECTION */
+.about{
+background:white;
+padding:50px 20px;
+margin-top:40px;
+}
+
+.about h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.7;
 }
 
 /* FOOTER */
 footer{
-    background:#1e3c88;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
+background:#0d1b3e;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+font-size:14px;
+}
+
+.social{
+margin-top:15px;
+}
+
+.social a{
+margin:0 8px;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+@media(max-width:600px){
+.hero h2{
+font-size:24px;
+}
 }
 
 </style>
@@ -117,90 +160,75 @@ footer{
 <body>
 
 <header>
-    <img src="logo.png" class="logo">
-    <h2>Focus On Career</h2>
+<h1>Focus On Career</h1>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="course.html">Course Info</a>
-    <a href="book.html">Book Order</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="delete-account.html">Account Delete</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
 <section class="hero">
-
-    <img src="banner.jpg" class="banner">
-
-    <h1>Focus On Career</h1>
-
-    <p>ગુજરાતની તમામ સરકારી પરીક્ષાની તૈયારી માટે વિશ્વસનીય એપ</p>
-
-    <a href="Focus On Career.apk" class="download-btn">
-        Download App
-    </a>
-
-    <p>Official App | Safe & Secure | Virus Free</p>
-
+<h2>Electrical & Competitive Exam Preparation</h2>
+<p>Mock Test | Ebook | Video Lecture | Printed Books</p>
+<a href="#" class="download-btn">Download App</a>
 </section>
 
-<div class="container">
+<section class="section">
+<div class="grid">
 
 <div class="card">
-<h3>📱 એપ વિષે</h3>
+<h3>Course Information</h3>
+<p>View all upcoming courses and syllabus details.</p>
+<a href="course.html">Open</a>
+</div>
+
+<div class="card">
+<h3>Book Order</h3>
+<p>Order Printed Books (Online Payment Only).</p>
+<a href="book.html">Order Now</a>
+</div>
+
+<div class="card">
+<h3>Payment Info</h3>
+<p>Secure Razorpay Payment & Transaction Details.</p>
+<a href="payment.html">View</a>
+</div>
+
+<div class="card">
+<h3>Privacy Policy</h3>
+<p>Read our official website & app policies.</p>
+<a href="privacy.html">Read</a>
+</div>
+
+<div class="card">
+<h3>Account Delete</h3>
+<p>Delete your account easily from here.</p>
+<a href="delete-account.html">Delete</a>
+</div>
+
+<div class="card">
+<h3>Contact Support</h3>
+<p>Email & WhatsApp support available.</p>
+<a href="contact.html">Contact</a>
+</div>
+
+</div>
+</section>
+
+<section class="about">
+<h2>About Focus On Career</h2>
 <p>
-Focus On Career એપમાં ગુજરાતની વિવિધ સરકારી પરીક્ષાઓ માટે MCQ,
-Mock Test, Ebook, Video Lecture અને Printed Book ની સુવિધા ઉપલબ્ધ છે.
-વિદ્યાર્થીઓને સરળ ભાષામાં પરીક્ષા આધારિત અભ્યાસ સામગ્રી આપવામાં આવે છે.
+Focus On Career is an educational platform providing high-quality mock tests, ebooks,
+video lectures and printed books for competitive examinations.
+<br><br>
+ગુજરાતના તમામ સરકારી પરીક્ષાની તૈયારી માટે વિશ્વસનીય એપ અને વેબસાઇટ.
 </p>
-</div>
-
-<div class="card">
-<h3>📘 ખાસ Electrical Assistant Course</h3>
-<p>
-GETCO અને UGVCL Electrical Assistant પરીક્ષા માટે ખાસ તૈયાર કરાયેલ MCQ,
-Mock Test અને 3900+ MCQ ની Printed Book ઉપલબ્ધ છે.
-ITI Electrician અને Wireman syllabus મુજબ સંપૂર્ણ તૈયારી.
-</p>
-</div>
-
-<div class="card">
-<h3>📚 એપમાં ઉપલબ્ધ સુવિધાઓ</h3>
-<ul>
-<li>✔ Subject Wise Mock Test</li>
-<li>✔ Ebook Course</li>
-<li>✔ Video Lecture</li>
-<li>✔ Printed Book Order</li>
-<li>✔ Exam Oriented Preparation</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>📢 Official Groups</h3>
-
-<a href="https://chat.whatsapp.com/Ec81UodEYPOLRkzqS33dx3?mode=gi_t"
-target="_blank"
-class="group-btn"
-style="background:#25D366;">WhatsApp Group</a>
-
-<a href="https://t.me/focusoncareer_gujarat"
-target="_blank"
-class="group-btn"
-style="background:#229ED9;">Telegram Group</a>
-
-<a href="https://www.instagram.com/study_gujarat_exam"
-target="_blank"
-class="group-btn"
-style="background:#E1306C;">Instagram</a>
-
-</div>
-
-</div>
+</section>
 
 <footer>
 © 2026 Focus On Career | All Rights Reserved
+
+<div class="social">
+<a href="https://wa.me/916355109710" target="_blank">WhatsApp</a>
+<a href="mailto:support@focusoncareer.in">Email</a>
+</div>
+
 </footer>
 
 </body>
