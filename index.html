@@ -1,408 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Focus On Career | Electrical & Competitive Exam Preparation</title>
-
 <style>
 
-/* ===== GLOBAL ===== */
-body{
-margin:0;
-font-family:'Segoe UI', Tahoma, sans-serif;
-background:#f4f7fb;
-color:#1b2b4b;
+/* HERO SECTION */
+.hero {
+    position: relative;
+    background: linear-gradient(rgba(10,35,80,0.85), rgba(10,35,80,0.85)), 
+                url('banner.jpg') center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    color: #fff;
 }
 
-a{
-text-decoration:none;
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
-/* ===== HEADER ===== */
-.header{
-background:#0b2c5f;
-color:white;
-padding:12px 40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-position:sticky;
-top:0;
-z-index:1000;
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
 }
 
-.logo-area{
-display:flex;
-align-items:center;
-font-size:22px;
-font-weight:600;
+/* REMOVE TOP DOWNLOAD BUTTON */
+.hero .download-btn {
+    display: none;
 }
 
-.logo-area img{
-height:42px;
-margin-right:12px;
+/* NAVIGATION MINI STYLE */
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#0f2d59;
 }
 
-.nav{
-display:flex;
-gap:28px;
+.navbar .logo-area {
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
-.nav a{
-color:white;
-font-size:14px;
+.navbar img {
+    width:45px;
+    height:45px;
+    border-radius:8px;
 }
 
-.nav a:hover{
-color:#ffcc00;
+.navbar a {
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+    transition:0.3s;
 }
 
-/* ===== HERO SECTION ===== */
-.hero{
-background:linear-gradient(135deg,#0b2c5f,#1e4f94);
-color:white;
-text-align:center;
-padding:60px 20px 40px;
-}
-
-.hero h1{
-font-size:34px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:16px;
-margin-bottom:25px;
-opacity:0.9;
-}
-
-/* Banner */
-.banner{
-max-width:1100px;
-margin:30px auto 0;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 8px 30px rgba(0,0,0,0.25);
-}
-
-.banner img{
-width:100%;
-display:block;
-}
-
-/* Download Button */
-.download-btn{
-display:inline-block;
-background:#ff9800;
-color:white;
-padding:14px 28px;
-border-radius:6px;
-font-size:15px;
-font-weight:600;
-}
-
-.download-btn:hover{
-background:#e68900;
+.navbar a:hover {
+    color:#f4b400;
 }
 
 </style>
-</head>
-
-<body>
-
-<!-- ===== HEADER ===== -->
-<div class="header">
-<div class="logo-area">
-<img src="logo.png" alt="Focus On Career Logo">
-Focus On Career
-</div>
-
-<div class="nav">
-<a href="index.html">Home</a>
-<a href="course.html">Courses</a>
-<a href="book.html">Printed Books</a>
-<a href="privacy.html">Privacy Policy</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
-
-<!-- ===== HERO ===== -->
-<div class="hero">
-<h1>Electrical & Competitive Exam Preparation</h1>
-<p>Mock Test | Ebook | Video Lecture | Printed Books</p>
-
-<a href="Focus On Career.apk" class="download-btn">
-Download Official App
-</a>
-
-<div class="banner">
-<img src="banner1.jpg" alt="Focus On Career Banner">
-</div>
-</div>
 <style>
 
-/* ===== MAIN SECTION ===== */
-.section{
-max-width:1200px;
-margin:60px auto;
-padding:0 20px;
+/* SERVICES SECTION */
+.services {
+    padding: 70px 20px;
+    background: #f4f6fb;
+    text-align: center;
 }
 
-.section-title{
-text-align:center;
-font-size:28px;
-margin-bottom:40px;
-font-weight:600;
-color:#0b2c5f;
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0f2d59;
 }
 
-/* ===== CARD GRID ===== */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.card{
-background:white;
-border-radius:12px;
-padding:30px;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-transition:0.3s;
+.service-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-.card:hover{
-transform:translateY(-6px);
-box-shadow:0 12px 30px rgba(0,0,0,0.15);
+.service-card:hover {
+    transform: translateY(-8px);
 }
 
-.card h3{
-margin-bottom:15px;
-color:#0b2c5f;
-font-size:18px;
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
-.card p{
-font-size:14px;
-line-height:1.6;
-color:#555;
-margin-bottom:20px;
+.service-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-.card-btn{
-display:inline-block;
-background:#0b2c5f;
-color:white;
-padding:10px 20px;
-border-radius:5px;
-font-size:13px;
+.service-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-.card-btn:hover{
-background:#163e82;
-}
+/* Different Colors */
+.card-blue { border-top: 5px solid #0f2d59; }
+.card-green { border-top: 5px solid #1abc9c; }
+.card-orange { border-top: 5px solid #f39c12; }
+.card-purple { border-top: 5px solid #8e44ad; }
+.card-red { border-top: 5px solid #e74c3c; }
+.card-dark { border-top: 5px solid #2c3e50; }
 
-.about-box{
-background:white;
-margin-top:70px;
-padding:40px;
-border-radius:12px;
-box-shadow:0 6px 20px rgba(0,0,0,0.08);
-line-height:1.7;
-}
+.btn-blue { background:#0f2d59; }
+.btn-green { background:#1abc9c; }
+.btn-orange { background:#f39c12; }
+.btn-purple { background:#8e44ad; }
+.btn-red { background:#e74c3c; }
+.btn-dark { background:#2c3e50; }
 
-.about-box h2{
-color:#0b2c5f;
-margin-bottom:20px;
-}
-
-.about-box p{
-font-size:14px;
-margin-bottom:15px;
+.service-card a:hover {
+    opacity:0.85;
 }
 
 </style>
+<section class="services">
+    <h2>Our Educational Services</h2>
 
+    <div class="card-grid">
 
-<!-- ===== FEATURES SECTION ===== -->
-<div class="section">
+        <div class="service-card card-blue">
+            <h3>Course Information</h3>
+            <p>Syllabus-based structured learning system for competitive exams.</p>
+            <a href="course.html" class="btn-blue">Explore Courses</a>
+        </div>
 
-<h2 class="section-title">Our Educational Services</h2>
+        <div class="service-card card-green">
+            <h3>Printed Book Order</h3>
+            <p>Secure online ordering system for printed preparation books.</p>
+            <a href="book.html" class="btn-green">Order Now</a>
+        </div>
 
-<div class="grid">
+        <div class="service-card card-orange">
+            <h3>Privacy & Legal Policy</h3>
+            <p>Read official Privacy Policy, Refund Policy & Terms.</p>
+            <a href="privacy.html" class="btn-orange">Read Policy</a>
+        </div>
 
-<div class="card">
-<h3>Course Information</h3>
-<p>Syllabus-based structured learning system designed for electrical and competitive government examinations.</p>
-<a href="course.html" class="card-btn">Explore Courses</a>
-</div>
+        <div class="service-card card-purple">
+            <h3>Account Deletion</h3>
+            <p>Delete your account securely as per guidelines.</p>
+            <a href="delete-account.html" class="btn-purple">Delete Account</a>
+        </div>
 
-<div class="card">
-<h3>Printed Book Order</h3>
-<p>Order printed preparation books securely through online payment system. Cash on Delivery is not available.</p>
-<a href="book.html" class="card-btn">Order Now</a>
-</div>
+        <div class="service-card card-red">
+            <h3>Contact Support</h3>
+            <p>Email & WhatsApp support for assistance.</p>
+            <a href="contact.html" class="btn-red">Contact Us</a>
+        </div>
 
-<div class="card">
-<h3>Privacy & Legal Policy</h3>
-<p>Read our official Privacy Policy, Refund Policy, Shipping Policy and Terms & Conditions.</p>
-<a href="privacy.html" class="card-btn">Read Policy</a>
-</div>
+        <div class="service-card card-dark">
+            <h3>Official App Access</h3>
+            <p>Access Mock Tests, Ebooks & Video Lectures through our mobile app.</p>
+            <a href="app.html" class="btn-dark">Download App</a>
+        </div>
 
-<div class="card">
-<h3>Account Deletion</h3>
-<p>Users can request account deletion from App profile or through official support email.</p>
-<a href="delete-account.html" class="card-btn">Delete Account</a>
-</div>
-
-<div class="card">
-<h3>Contact Support</h3>
-<p>Email and WhatsApp support available for queries related to courses and book orders.</p>
-<a href="contact.html" class="card-btn">Contact Us</a>
-</div>
-
-<div class="card">
-<h3>Official App Access</h3>
-<p>Access mock tests, ebooks and video lectures through our secure mobile application.</p>
-<a href="Focus On Career.apk" class="card-btn">Download App</a>
-</div>
-
-</div>
-
-
-<!-- ===== ABOUT SECTION ===== -->
-<div class="about-box">
-<h2>About Focus On Career</h2>
-
-<p>
-Focus On Career is an independent educational platform based in Deesa, Gujarat, India. 
-We provide exam-oriented preparation material for electrical and competitive government examinations.
-</p>
-
-<p>
-Our platform includes Mock Tests, Ebooks, Video Lectures and Printed Books 
-designed according to official syllabus patterns.
-</p>
-
-<p>
-ગુજરાત રાજ્યની વિવિધ સરકારી પરીક્ષાઓ માટે વિષયવાર અને સિલેબસ આધારિત અભ્યાસ વ્યવસ્થા અહીં ઉપલબ્ધ છે.
-</p>
-
-</div>
-
-</div>
-<style>
-
-/* ===== LEGAL STRIP ===== */
-.legal-strip{
-background:#f0f2f5;
-padding:25px 20px;
-text-align:center;
-font-size:13px;
-color:#555;
-line-height:1.7;
-}
-
-.legal-strip a{
-color:#0b2c5f;
-font-weight:600;
-}
-
-/* ===== FOOTER ===== */
-.footer{
-background:#0b2c5f;
-color:white;
-padding:40px 20px;
-margin-top:0;
-}
-
-.footer-container{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.footer h4{
-margin-bottom:15px;
-font-size:16px;
-}
-
-.footer p,
-.footer a{
-font-size:13px;
-color:#dcdcdc;
-margin-bottom:8px;
-display:block;
-}
-
-.footer a:hover{
-color:white;
-}
-
-.footer-bottom{
-text-align:center;
-margin-top:30px;
-font-size:12px;
-color:#bbb;
-}
-
-.social-links a{
-display:inline-block;
-margin-right:15px;
-font-size:14px;
-}
-
-</style>
-
-
-<!-- ===== LEGAL STRIP ===== -->
-<div class="legal-strip">
-By using this website and mobile application, you agree to our 
-<a href="privacy.html">Privacy Policy</a>, 
-<a href="privacy.html">Refund Policy</a>, 
-<a href="privacy.html">Shipping Policy</a> and 
-Terms of Service.
-
-All payments are processed securely via authorized payment gateways.
-
-Focus On Career is an independent educational platform and is not affiliated with any government body.
-</div>
-
-
-<!-- ===== FOOTER ===== -->
-<div class="footer">
-
-<div class="footer-container">
-
-<div>
-<h4>Focus On Career</h4>
-<p>Electrical & Competitive Exam Preparation Platform</p>
-<p>Deesa, Gujarat, India</p>
-<p>Email: support@focusoncareer.in</p>
-</div>
-
-<div>
-<h4>Quick Links</h4>
-<a href="index.html">Home</a>
-<a href="course.html">Courses</a>
-<a href="book.html">Book Order</a>
-<a href="privacy.html">Privacy Policy</a>
-<a href="contact.html">Contact</a>
-</div>
-
-<div>
-<h4>Support</h4>
-<a href="mailto:support@focusoncareer.in">Email Support</a>
-<a href="https://wa.me/916355109710" target="_blank">WhatsApp Support</a>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-© 2026 Focus On Career. All Rights Reserved.
-</div>
-
-</div>
+    </div>
+</section>
