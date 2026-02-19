@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Support | Focus On Career</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI', Tahoma, sans-serif;
+background:#f4f6f9;
+color:#222;
+}
+
+/* ===== HEADER ===== */
+.topbar{
+background:#0b2c5f;
+color:white;
+padding:10px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.brand{
+display:flex;
+align-items:center;
+font-size:22px;
+font-weight:600;
+}
+
+.brand img{
+height:40px;
+margin-right:10px;
+}
+
+.nav{
+display:flex;
+gap:20px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.nav a:hover{
+text-decoration:underline;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header{
+background:linear-gradient(135deg,#0b2c5f,#1d4e89);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+.page-header h1{
+margin:0;
+font-size:32px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* ===== CONTACT GRID ===== */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* ===== CARD ===== */
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{
+color:#0b2c5f;
+margin-bottom:15px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+display:inline-block;
+background:#0b2c5f;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:4px;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#1d4e89;
+}
+
+/* ===== FORM ===== */
+input, textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:4px;
+font-size:14px;
+}
+
+textarea{
+resize:none;
+height:120px;
+}
+
+.submit-btn{
+background:#ff9800;
+border:none;
+color:white;
+padding:12px;
+width:100%;
+font-size:15px;
+border-radius:4px;
+cursor:pointer;
+}
+
+.submit-btn:hover{
+background:#e68900;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+background:#0b2c5f;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:60px;
+font-size:14px;
+}
+
+.footer a{
+color:#ffcc00;
+text-decoration:none;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<div class="topbar">
+<div class="brand">
+<img src="logo.png" alt="Logo">
+Focus On Career
+</div>
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="course.html">Courses</a>
+<a href="book.html">Book Order</a>
+<a href="payment.html">Payment</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<div class="page-header">
+<h1>Contact Support</h1>
+<p>We are here to assist you</p>
+</div>
+
+<div class="container">
+
+<div class="grid">
+
+<!-- CONTACT DETAILS -->
+<div class="card">
+<h3>Official Contact Details</h3>
+
+<p><strong>Business Name:</strong> Focus On Career</p>
+<p><strong>Location:</strong> Deesa, Gujarat, India</p>
+<p><strong>Email:</strong> support@focusoncareer.in</p>
+
+<a href="mailto:support@focusoncareer.in" class="btn">Send Email</a>
+
+<br><br>
+
+<p><strong>WhatsApp Support:</strong></p>
+<a href="https://wa.me/916355109710" class="btn" target="_blank">
+Chat on WhatsApp
+</a>
+
+</div>
+
+<!-- CONTACT FORM -->
+<div class="card">
+<h3>Send Us a Message</h3>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Write your message here..." required></textarea>
+<button type="submit" class="submit-btn">Submit</button>
+</form>
+
+<p style="font-size:12px; margin-top:10px;">
+Note: For faster response, please contact via Email or WhatsApp.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+© 2026 Focus On Career | All Rights Reserved <br>
+Email: <a href="mailto:support@focusoncareer.in">support@focusoncareer.in</a> |
+<a href="privacy.html">Privacy Policy</a>
+</div>
+
+</body>
+</html>
