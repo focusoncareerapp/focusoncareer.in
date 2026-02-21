@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Focus On Career</title>
 
 <style>
-body{
-margin:0;
-font-family: 'Poppins', sans-serif;
-background:#f3f5f9;
-}
+body{margin:0;font-family:Arial;background:#f3f5f9;}
 
 header{
 background:#0b2c5f;
@@ -21,15 +16,8 @@ align-items:center;
 color:white;
 }
 
-.logo{
-display:flex;
-align-items:center;
-}
-
-.logo img{
-width:40px;
-margin-right:10px;
-}
+.logo{display:flex;align-items:center;}
+.logo img{width:40px;margin-right:10px;}
 
 nav a{
 color:white;
@@ -39,10 +27,6 @@ padding:6px 14px;
 background:#163d7a;
 border-radius:20px;
 font-size:14px;
-}
-
-nav a:hover{
-background:#f59e0b;
 }
 
 .hero{
@@ -57,10 +41,7 @@ font-weight:bold;
 text-align:center;
 }
 
-.section{
-padding:40px 20px;
-text-align:center;
-}
+.section{padding:40px 20px;text-align:center;}
 
 .card-container{
 display:grid;
@@ -76,9 +57,7 @@ border-radius:12px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
-.card h3{
-margin-bottom:10px;
-}
+.card h3{margin-bottom:10px;}
 
 .card button{
 margin-top:10px;
@@ -113,6 +92,7 @@ padding:15px;
 margin-top:40px;
 font-size:14px;
 }
+footer a{color:white;text-decoration:none;margin:0 8px;}
 </style>
 </head>
 
@@ -126,11 +106,11 @@ font-size:14px;
 
 <nav>
 <a href="index.html">Home</a>
-<a href="#">Courses</a>
-<a href="#">Book Store</a>
-<a href="#">Policy</a>
+<a href="course.html">Courses</a>
+<a href="book.html">Book Store</a>
+<a href="privacy.html">Policy</a>
 <a href="contact.html">Contact</a>
-<a href="#">About Us</a>
+<a href="about.html">About Us</a>
 </nav>
 </header>
 
@@ -146,45 +126,37 @@ Electrical & Competitive Exam Preparation Platform
 <div class="card">
 <h3>Course Information</h3>
 <p>Syllabus based structured learning system.</p>
-<button class="blue">Explore Courses</button>
+<button class="blue" onclick="location.href='course.html'">Explore Courses</button>
 </div>
 
 <div class="card">
 <h3>Printed Book Store</h3>
 <p>Secure prepaid book ordering system.</p>
-<button class="green">Order Books</button>
+<button class="green" onclick="location.href='book.html'">Order Books</button>
 </div>
 
 <div class="card">
 <h3>Privacy & Legal Policy</h3>
 <p>Read official privacy, refund & shipping policies.</p>
-<button class="orange">Read Policy</button>
+<button class="orange" onclick="location.href='privacy.html'">Read Policy</button>
 </div>
 
 <div class="card">
 <h3>Account Deletion</h3>
 <p>Request account deletion safely.</p>
-<button class="purple">Delete Account</button>
+<button class="purple" onclick="location.href='delete-account.html'">Delete Account</button>
 </div>
 
 <div class="card">
 <h3>Contact Support</h3>
 <p>Email and WhatsApp support available.</p>
-<button class="red">Contact Us</button>
+<button class="red" onclick="location.href='contact.html'">Contact Us</button>
 </div>
 
 <div class="card">
 <h3>Official Mobile App</h3>
 <p>Access Mock Tests, eBooks & Video Lectures.</p>
-<button class="black">View App Details</button>
-</div>
-
-<!-- ✅ NEW ABOUT CARD (same design, same style) -->
-
-<div class="card">
-<h3>About Focus On Career</h3>
-<p>Know more about our mission, vision and educational platform details.</p>
-<button class="blue">Read About Us</button>
+<button class="black" onclick="location.href='app.html'">View App Details</button>
 </div>
 
 </div>
@@ -205,7 +177,11 @@ examinations including mock tests, video lectures and printed books.
 </div>
 
 <footer>
-© 2026 Focus On Career | All Rights Reserved | support@focusoncareer.in
+<a href="about.html">About Us</a> |
+<a href="privacy.html">Privacy Policy</a> |
+<a href="contact.html">Contact</a>
+<br><br>
+© 2026 Focus On Career | support@focusoncareer.in
 </footer>
 
 </body>
