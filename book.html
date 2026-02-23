@@ -1,137 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<title>Focus On Career - Book</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Focus On Career | Book Store</title>
 
 <style>
 body{
-margin:0;
-font-family:'Segoe UI',sans-serif;
-background:#f2f4f8;
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f2f4f8;
+    text-align:center;
 }
 
-header{
-background:linear-gradient(45deg,#0d47a1,#1976d2);
-color:white;
-text-align:center;
-padding:15px;
+/* HEADER */
+.header{
+    background:#1e3c72;
+    color:white;
+    padding:20px 10px;
 }
 
-nav{
-background:#0b3d91;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+.header h2{
+    margin:0;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-padding:10px 15px;
-font-size:14px;
+/* MINI NAVIGATION */
+.nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    background:#0f2e5a;
+    padding:10px;
 }
 
-nav a:hover{
-background:#1565c0;
-border-radius:5px;
+.nav a{
+    background:white;
+    color:#0f2e5a;
+    padding:6px 12px;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:13px;
+    font-weight:bold;
 }
 
+.nav a:hover{
+    background:#ffd700;
+}
+
+/* BOOK SECTION */
 .container{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-padding:30px 15px;
-max-width:1100px;
-margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px 15px;
 }
 
 .card{
-background:white;
-width:320px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-padding:15px;
-text-align:center;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
+    background:white;
+    width:280px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card img{
-width:100%;
-height:420px;
-object-fit:cover;
-border-radius:8px;
+    width:100%;
+    border-radius:8px;
 }
 
-.book-title{
-font-size:18px;
-margin:12px 0;
-font-weight:600;
+.card h3{
+    font-size:16px;
+    margin:15px 0;
 }
 
 .btn{
-display:block;
-margin:6px 0;
-padding:10px;
-background:#1565c0;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-size:14px;
+    display:block;
+    background:#1e3c72;
+    color:white;
+    padding:8px;
+    margin:6px 0;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:14px;
 }
 
 .btn:hover{
-background:#0d47a1;
+    background:#2a5298;
 }
 
 footer{
-text-align:center;
-padding:20px;
-font-size:14px;
-color:#555;
+    padding:15px;
+    font-size:13px;
+    background:#eee;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h2>Focus On Career</h2>
-<p>Official Book Store</p>
-</header>
+<div class="header">
+    <h2>Focus On Career</h2>
+    <p>Official Book Store</p>
+</div>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="app.html">App</a>
-<a href="course.html">Course</a>
-<a href="combo.html">Combo</a>
-<a href="book.html">Book</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy</a>
-</nav>
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="app.html">App</a>
+    <a href="course.html">Course</a>
+    <a href="combo.html">Combo</a>
+    <a href="book.html">Book</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+</div>
 
 <div class="container">
 
-<!-- BOOK 1 -->
-<div class="card">
-<img src="book1.jpg" alt="Electrical Assistant All In One Book">
-<div class="book-title">Electrical Assistant All In One MCQ Book</div>
-<a class="btn" href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk" target="_blank">Demo PDF</a>
-<a class="btn" href="payment.html">Buy Now</a>
-</div>
+    <!-- BOOK 1 -->
+    <div class="card">
+        <img src="book1.jpg" alt="Electrical Assistant All In One MCQ Book">
+        <h3>Electrical Assistant All In One MCQ Book</h3>
 
-<!-- BOOK 2 -->
-<div class="card">
-<img src="book2.jpg" alt="Electrical Assistant Practice Book">
-<div class="book-title">Electrical Assistant Practice & Model Paper Book</div>
-<a class="btn" href="https://drive.google.com/file/d/1CJ6RHIuTufggaFQB7kIZ4JSoV2p-ZWao/view?usp=drivesdk" target="_blank">Demo PDF</a>
-<a class="btn" href="payment.html">Buy Now</a>
-</div>
+        <a href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk" target="_blank" class="btn">
+            Demo PDF
+        </a>
+
+        <a href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk" target="_blank" class="btn">
+            Buy Now
+        </a>
+    </div>
+
+    <!-- BOOK 2 -->
+    <div class="card">
+        <img src="book2.jpg" alt="Electrical Assistant Practice & Model Paper Book">
+        <h3>Electrical Assistant Practice & Model Paper Book</h3>
+
+        <a href="https://drive.google.com/file/d/1CJ6RHIuTufggaFQB7kIZ4JSoV2p-ZWao/view?usp=drivesdk" target="_blank" class="btn">
+            Demo PDF
+        </a>
+
+        <a href="https://drive.google.com/file/d/1CJ6RHIuTufggaFQB7kIZ4JSoV2p-ZWao/view?usp=drivesdk" target="_blank" class="btn">
+            Buy Now
+        </a>
+    </div>
 
 </div>
 
