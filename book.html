@@ -8,22 +8,22 @@
 <style>
 body{
 margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#f4f6fb;
+font-family:'Segoe UI',sans-serif;
+background:#f2f4f8;
 }
 
 header{
 background:linear-gradient(45deg,#0d47a1,#1976d2);
 color:white;
-padding:15px 0;
 text-align:center;
+padding:15px;
 }
 
 nav{
+background:#0b3d91;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-background:#0b3d91;
 }
 
 nav a{
@@ -39,35 +39,43 @@ border-radius:5px;
 }
 
 .container{
-padding:30px 15px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+display:flex;
+justify-content:center;
 gap:25px;
+flex-wrap:wrap;
+padding:30px 15px;
 max-width:1100px;
 margin:auto;
 }
 
 .card{
 background:white;
+width:320px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 padding:15px;
 text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card img{
 width:100%;
+height:420px;
+object-fit:cover;
 border-radius:8px;
 }
 
-.card h3{
-margin:10px 0;
+.book-title{
 font-size:18px;
+margin:12px 0;
+font-weight:600;
 }
 
 .btn{
 display:block;
-margin:8px 0;
+margin:6px 0;
 padding:10px;
 background:#1565c0;
 color:white;
@@ -111,8 +119,8 @@ color:#555;
 
 <!-- BOOK 1 -->
 <div class="card">
-<img src="book1.jpg" alt="Electrical Assistant Book">
-<h3>Electrical Assistant All In One MCQ Book</h3>
+<img src="book1.jpg" alt="Electrical Assistant All In One Book">
+<div class="book-title">Electrical Assistant All In One MCQ Book</div>
 <a class="btn" href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk" target="_blank">Demo PDF</a>
 <a class="btn" href="payment.html">Buy Now</a>
 </div>
@@ -120,7 +128,7 @@ color:#555;
 <!-- BOOK 2 -->
 <div class="card">
 <img src="book2.jpg" alt="Electrical Assistant Practice Book">
-<h3>Electrical Assistant Practice & Model Paper Book</h3>
+<div class="book-title">Electrical Assistant Practice & Model Paper Book</div>
 <a class="btn" href="https://drive.google.com/file/d/1CJ6RHIuTufggaFQB7kIZ4JSoV2p-ZWao/view?usp=drivesdk" target="_blank">Demo PDF</a>
 <a class="btn" href="payment.html">Buy Now</a>
 </div>
