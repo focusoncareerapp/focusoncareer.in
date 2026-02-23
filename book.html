@@ -1,216 +1,135 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Focus On Career Book Store</title>
+<title>Focus On Career | Book Store</title>
 
 <style>
-
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f6fb;
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f4f6fb;
 }
 
-/* HEADER */
-.header{
-    background:linear-gradient(135deg,#0d47a1,#1976d2);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+header{
+background:linear-gradient(45deg,#0d47a1,#1976d2);
+color:white;
+padding:15px 0;
+text-align:center;
 }
 
-.header h1{
-    margin:0;
-    font-size:40px;
-    letter-spacing:1px;
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+background:#0b3d91;
 }
 
-.header p{
-    margin-top:10px;
-    font-size:16px;
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 15px;
+font-size:14px;
 }
 
-/* CONTAINER */
+nav a:hover{
+background:#1565c0;
+border-radius:5px;
+}
+
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px 15px;
+padding:30px 15px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1100px;
+margin:auto;
 }
 
-/* CARD GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-
-/* CARD */
 .card{
-    background:white;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    padding:15px;
-    text-align:center;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
+background:white;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+padding:15px;
+text-align:center;
 }
 
 .card img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    border-radius:8px;
+width:100%;
+border-radius:8px;
 }
 
-/* BOOK TITLE */
-.book-title{
-    font-size:18px;
-    font-weight:bold;
-    margin:12px 0;
+.card h3{
+margin:10px 0;
+font-size:18px;
 }
 
-/* QUANTITY */
-.qty-box{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:10px 0;
-}
-
-.qty-box button{
-    width:35px;
-    height:35px;
-    border:none;
-    background:#1976d2;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-}
-
-.qty-box input{
-    width:50px;
-    text-align:center;
-    border:1px solid #ccc;
-    height:35px;
-}
-
-/* BUTTON */
 .btn{
-    display:block;
-    background:#0d47a1;
-    color:white;
-    padding:10px;
-    margin-top:8px;
-    border-radius:6px;
-    text-decoration:none;
-    font-weight:bold;
+display:block;
+margin:8px 0;
+padding:10px;
+background:#1565c0;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
 }
 
 .btn:hover{
-    background:#1565c0;
+background:#0d47a1;
 }
 
-/* COMING SOON */
-.coming{
-    height:300px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:22px;
-    color:#999;
-    background:#f1f1f1;
-    border-radius:8px;
-    font-weight:bold;
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+color:#555;
 }
-
-.footer{
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-    color:#777;
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>Focus On Career</h1>
-    <p>Official Book Store</p>
-</div>
+<header>
+<h2>Focus On Career</h2>
+<p>Official Book Store</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="app.html">App</a>
+<a href="course.html">Course</a>
+<a href="combo.html">Combo</a>
+<a href="book.html">Book</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy</a>
+</nav>
 
 <div class="container">
 
-<div class="grid">
-
-<!-- CARD 1 BOOK -->
+<!-- BOOK 1 -->
 <div class="card">
-
 <img src="book1.jpg" alt="Electrical Assistant Book">
-
-<div class="book-title">
-Electrical Assistant All In One MCQ Book
+<h3>Electrical Assistant All In One MCQ Book</h3>
+<a class="btn" href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk" target="_blank">Demo PDF</a>
+<a class="btn" href="payment.html">Buy Now</a>
 </div>
 
-<div class="qty-box">
-<button onclick="minus()">-</button>
-<input type="text" id="qty" value="1">
-<button onclick="plus()">+</button>
-</div>
-
-<a class="btn" target="_blank"
-href="https://drive.google.com/file/d/1voTuq_NnNjnlqpOVw1LNTp3-Wkfs66Oc/view?usp=drivesdk">
-Demo PDF
-</a>
-
-<a class="btn" href="payment.html">
-Buy Now
-</a>
-
-</div>
-
-<!-- CARD 2 -->
+<!-- BOOK 2 -->
 <div class="card">
-<div class="coming">Coming Soon</div>
-</div>
-
-<!-- CARD 3 -->
-<div class="card">
-<div class="coming">Coming Soon</div>
-</div>
-
-<!-- CARD 4 -->
-<div class="card">
-<div class="coming">Coming Soon</div>
+<img src="book2.jpg" alt="Electrical Assistant Practice Book">
+<h3>Electrical Assistant Practice & Model Paper Book</h3>
+<a class="btn" href="https://drive.google.com/file/d/1CJ6RHIuTufggaFQB7kIZ4JSoV2p-ZWao/view?usp=drivesdk" target="_blank">Demo PDF</a>
+<a class="btn" href="payment.html">Buy Now</a>
 </div>
 
 </div>
 
-</div>
-
-<div class="footer">
-© Focus On Career – All Rights Reserved
-</div>
-
-<script>
-function plus(){
-    let qty=document.getElementById("qty");
-    qty.value=parseInt(qty.value)+1;
-}
-
-function minus(){
-    let qty=document.getElementById("qty");
-    if(qty.value>1){
-        qty.value=parseInt(qty.value)-1;
-    }
-}
-</script>
+<footer>
+© Focus On Career - All Rights Reserved
+</footer>
 
 </body>
 </html>
